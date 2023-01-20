@@ -1,0 +1,8 @@
+0:not_found.png
+16:vbit-90deg.png
+4:vbit-90deg.png
+1:tapered_ball_end.png
+33:center_drill.png
+11:spiral_ball_end.png
+7:ballend_straight.png
+2:tapered_ball_end.png

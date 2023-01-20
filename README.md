@@ -1,4 +1,4 @@
-## QtDragon_hd
+## QtWoodpecker
 ### Extra libraries are required in addition to those for the installation of QTVCP for additional functionality
 
 #### For viewing job setup sheets and help pages formatted in HTML

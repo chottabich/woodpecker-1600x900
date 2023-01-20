@@ -1,0 +1,5 @@
+G20
+G20
+O<go_to_zero> call [0]
+PREFERENCE
+HALSHOW

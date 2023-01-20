@@ -1,0 +1,10 @@
+2023-01-20 13:55:40,957 - QTvcp - CRITICAL - Aborted from Error Dialog
+ Qtvcp encountered an error.  The following information may be useful in troubleshooting:
+LinuxCNC Version  : 2.10.0-pre0-561-g16311ef9b
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/qtvcp/widgets/screen_options.py", line 390, in closeEvent
+    HANDLER = self.QTVCP_INSTANCE_.handler_instance
+AttributeError: 'VCPWindow' object has no attribute 'handler_instance'
+
+

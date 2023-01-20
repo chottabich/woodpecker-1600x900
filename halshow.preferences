@@ -1,0 +1,22 @@
+# Halshow settings
+# This file is generated automatically.
+wm geometry . 948x467+1279+432
+placeFrames 0.43197278911564624
+set ::ratio 0.43197278911564624
+set ::old_w_leftf 160
+set ::watchlist {
+    pin+ddt_x.out
+    pin+joint.0.f-error
+    pin+joint.0.error
+    pin+joint.0.f-errored
+    pin+joint.0.vel-cmd
+    pin+vel_xy.out
+    sig+Xvel
+}
+set ::workmode watchhal
+set ::watchInterval 100
+set ::col1_width 100
+set ::ffmts 
+set ::ifmts 
+set ::alwaysOnTop 0
+set ::autoSaveWatchlist 1

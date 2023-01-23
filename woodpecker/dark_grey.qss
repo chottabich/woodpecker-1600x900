@@ -22,7 +22,8 @@ QToolTip
 QPushButton,
 ActionButton,
 SystemToolButton,
-AxisToolButton {
+AxisToolButton,
+QToolButton {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #606060, stop:1 #202020);
     border: 1px solid black;
     border-radius: 4px;
@@ -131,7 +132,10 @@ QLabel {
     color: #FD9900;
 }
 
-QLabel#label_axis_x,  QLabel#label_axis_y,  QLabel#label_axis_z,  QLabel#label_axis_a {
+QLabel#label_axis_x,  
+QLabel#label_axis_y,  
+QLabel#label_axis_z,  
+QLabel#label_axis_a {
     background: qlineargradient(spread:reflect, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(120, 140, 180, 255),  stop:0.3 rgba(11, 22, 33, 255));
     border: 1px solid black;
     border-radius: 4px;
@@ -234,12 +238,8 @@ Calculator QPushButton{
   font: 13pt "Lato Heavy";
 }
 
-.QFrame {
-    background: url(:/images/images/brushed_metal.png)
-}
-
 QTabWidget::pane > QWidget {
-    background: lightgray;
+    background: #505050;
     border: none;
 }
 
@@ -283,6 +283,7 @@ QListView,
 QTreeView {
     background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(83, 83, 83, 255));
     selection-background-color: transparent;
+    qproperty-alternatingRowColors: false;
     border: 1px solid black;
     gridline-color: black;
     font: 10pt "Lato Heavy";
@@ -502,8 +503,23 @@ QHeaderView::section {
     padding: 5px;
 }
 
-GCodeEditor#gcode_viewer {
-    background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(83, 83, 83, 255));
+/** GCode Display **/
+EditorBase {
+    qproperty-styleColorBackground: #303030;
+    qproperty-styleColorMarginBackground: #202020;
+    qproperty-styleColorMarginText: #E0E0E0; /* margin line numbers */
+    qproperty-styleColorMarkerBackground: #505050; /* Current Line Marker Background */
+    qproperty-styleFont: "Lato Heavy, 10";
+    qproperty-styleFont1: "Lato Heavy, 9";  /* comments */
+    qproperty-styleFontMargin: "Lato Heavy, 9";
+    qproperty-styleColor0: #efefef;	 /* default */
+    qproperty-styleColor1: #788a74;	 /* LineNo & Comments */
+    qproperty-styleColor2: #5f6cd9;  /* Gcodes */
+    qproperty-styleColor3: #9157cf;	 /* Mcodes */
+    qproperty-styleColor4: #598f4d;	 /* Axes */
+    qproperty-styleColor5: #598f4d;	 /* Other (feed, spindle, radius, etc) */
+    qproperty-styleColor6: #9ad58d;	 /* Axes Values */
+    qproperty-styleColor7: #9ad58d;	 /* Other Values */
 }
 
 QStackedWidget {
@@ -524,7 +540,7 @@ QDialog QPushButton {
     height: 40px;
 }
 
-ToolDialog,CloseDialog,EntryDialog{
+ToolDialog,CloseDialog,EntryDialog, CalculatorDialog{
 background-color: gray;
 }
 ToolDialog QPushButton{
@@ -548,6 +564,10 @@ QMenu::item {
 
 QMenu::item:selected { /* when user selects item using mouse or keyboard */
     background-color: blue;
+}
+
+GcodeDisplay{
+background-color: #CAF9C7
 }
 
 

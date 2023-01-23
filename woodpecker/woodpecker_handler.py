@@ -846,11 +846,6 @@ class HandlerClass:
             self.w.btn_keyboard.setChecked(False)
             self.w.stackedWidget_2.setCurrentIndex(0)
             self.w.stackedWidget_4.setCurrentIndex(0)
-        # show ngcgui info tab if utilities tab is selected
-        # but only if the utilities tab has ngcgui selected
-        if index == TAB_UTILITIES:
-            self.w.tabWidget_utilities.setCurrentIndex(2)
-            self.w.stackedWidget_4.setCurrentIndex(7) 
 
         # toggle home/tool offsets buttons in DRO section
         if index == TAB_TOOL:
@@ -1293,9 +1288,9 @@ class HandlerClass:
 
     def tab_utilities_changed(self, num):
         if num == 2:
-            self.w.stackedWidget_4.setCurrentIndex(9)
+            self.w.stackedWidget_4.setCurrentIndex(7)
         else:
-            self.w.stackedWidget_4.setCurrentIndex(8)
+            self.w.stackedWidget_4.setCurrentIndex(4)
 
     def apply_stylesheet_clicked(self, index):
         if self.w.cmb_stylesheet.currentText() == "As Loaded": return

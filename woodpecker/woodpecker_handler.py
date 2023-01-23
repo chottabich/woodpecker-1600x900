@@ -117,7 +117,7 @@ class HandlerClass:
                             "dro_button_stack_a", "slider_jog_angular", "btn_jog_a_slow", "widget_increments_angular",
                             "btn_jog_pos_a", "btn_jog_neg_a", "status_label_jog_angular"]
         self.button_response_list = ["frame_cycle_start", "frame_home_all", "dro_button_stack_x", "dro_button_stack_y",
-                            "dro_button_stack_z", "dro_button_stack_a", "btn_reload_file"]
+                            "dro_button_stack_z", "dro_button_stack_a", "btn_reload_file", "btn_zero_all"]
 
         self.html = """<html>
 <head>
@@ -921,18 +921,25 @@ class HandlerClass:
                     return
                 #self.h['comp-on'] = False
             else:
-                self.h['eoffset-spindle-count'] = 0
-                self.w.spindle_eoffset_value.setText('0')
-                #self.h['eoffset-clear'] = True
                 self.h['spindle-inhibit'] = False
-                if STATUS.is_auto_running():
+                self.w.stackedWidget_5.setCurrentIndex(1)
+                self.w.btn_lower_the_spindle.isChecked()
+                self.w.action_pause.setEnabled(False)
+                
+    def lower_the_spindle_pressed(self):            
+            self.h['eoffset-spindle-count'] = 0           
+            self.w.spindle_eoffset_value.setText('0')
+            self.w.stackedWidget_5.setCurrentIndex(0)
+            self.w.btn_pause_spindle.isChecked()
+            self.w.action_pause.setEnabled(True)
+            if STATUS.is_auto_running():   
                 # instantiate warning box
                     info = "Wait for spindle at speed signal before resuming"
                     mess = {'NAME':'MESSAGE', 'ICON':'WARNING',
                         'ID':'_wait_resume_', 'MESSAGE':'CAUTION',
                         'NONBLOCKING':'True', 'MORE':info, 'TYPE':'OK'}
                     ACTION.CALL_DIALOG(mess)
-
+                       
     def btn_enable_comp_clicked(self, state):
         if state:
             fname = os.path.join(PATH.CONFIGPATH, "probe_points.txt")

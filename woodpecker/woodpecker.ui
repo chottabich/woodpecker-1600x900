@@ -7297,71 +7297,6 @@ Z COMP</string>
                               <property name="spacing">
                                <number>4</number>
                               </property>
-                              <item row="1" column="1">
-                               <widget class="PushButton" name="btn_pause_spindle">
-                                <property name="sizePolicy">
-                                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                                  <horstretch>0</horstretch>
-                                  <verstretch>0</verstretch>
-                                 </sizepolicy>
-                                </property>
-                                <property name="minimumSize">
-                                 <size>
-                                  <width>70</width>
-                                  <height>49</height>
-                                 </size>
-                                </property>
-                                <property name="maximumSize">
-                                 <size>
-                                  <width>70</width>
-                                  <height>49</height>
-                                 </size>
-                                </property>
-                                <property name="toolTip">
-                                 <string>Spindle pause</string>
-                                </property>
-                                <property name="styleSheet">
-                                 <string notr="true"/>
-                                </property>
-                                <property name="text">
-                                 <string>PAUSE
-SPINDLE</string>
-                                </property>
-                                <property name="checkable">
-                                 <bool>true</bool>
-                                </property>
-                                <property name="indicator_option" stdset="0">
-                                 <bool>true</bool>
-                                </property>
-                                <property name="checked_state_text_option" stdset="0">
-                                 <bool>true</bool>
-                                </property>
-                                <property name="on_color" stdset="0">
-                                 <color>
-                                  <red>255</red>
-                                  <green>255</green>
-                                  <blue>0</blue>
-                                 </color>
-                                </property>
-                                <property name="shape_option" stdset="0">
-                                 <number>1</number>
-                                </property>
-                                <property name="right_edge_offset" stdset="0">
-                                 <number>2</number>
-                                </property>
-                                <property name="top_edge_offset" stdset="0">
-                                 <number>4</number>
-                                </property>
-                                <property name="true_state_string" stdset="0">
-                                 <string>SPINDLE
-PAUSED</string>
-                                </property>
-                                <property name="false_state_string" stdset="0">
-                                 <string>PAUSE
-SPINDLE</string>
-                                </property>
-                               </widget>
-                              </item>
                               <item row="5" column="0" colspan="3">
                                <widget class="QProgressBar" name="progressBar">
                                 <property name="sizePolicy">
@@ -8429,6 +8364,157 @@ START</string>
                                  </widget>
                                 </item>
                                </layout>
+                              </item>
+                              <item row="1" column="1">
+                               <widget class="QStackedWidget" name="stackedWidget_5">
+                                <property name="minimumSize">
+                                 <size>
+                                  <width>70</width>
+                                  <height>49</height>
+                                 </size>
+                                </property>
+                                <property name="maximumSize">
+                                 <size>
+                                  <width>70</width>
+                                  <height>49</height>
+                                 </size>
+                                </property>
+                                <property name="currentIndex">
+                                 <number>0</number>
+                                </property>
+                                <widget class="QWidget" name="page_10">
+                                 <layout class="QVBoxLayout" name="verticalLayout_58">
+                                  <property name="spacing">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="leftMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="topMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="rightMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="bottomMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <item>
+                                   <widget class="PushButton" name="btn_pause_spindle">
+                                    <property name="sizePolicy">
+                                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                      <horstretch>0</horstretch>
+                                      <verstretch>0</verstretch>
+                                     </sizepolicy>
+                                    </property>
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>70</width>
+                                      <height>49</height>
+                                     </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                     <size>
+                                      <width>70</width>
+                                      <height>49</height>
+                                     </size>
+                                    </property>
+                                    <property name="toolTip">
+                                     <string>Spindle pause</string>
+                                    </property>
+                                    <property name="styleSheet">
+                                     <string notr="true"/>
+                                    </property>
+                                    <property name="text">
+                                     <string>PAUSE
+SPINDLE</string>
+                                    </property>
+                                    <property name="checkable">
+                                     <bool>true</bool>
+                                    </property>
+                                    <property name="autoExclusive">
+                                     <bool>false</bool>
+                                    </property>
+                                    <property name="indicator_option" stdset="0">
+                                     <bool>true</bool>
+                                    </property>
+                                    <property name="checked_state_text_option" stdset="0">
+                                     <bool>true</bool>
+                                    </property>
+                                    <property name="on_color" stdset="0">
+                                     <color>
+                                      <red>255</red>
+                                      <green>255</green>
+                                      <blue>0</blue>
+                                     </color>
+                                    </property>
+                                    <property name="shape_option" stdset="0">
+                                     <number>1</number>
+                                    </property>
+                                    <property name="right_edge_offset" stdset="0">
+                                     <number>2</number>
+                                    </property>
+                                    <property name="top_edge_offset" stdset="0">
+                                     <number>4</number>
+                                    </property>
+                                    <property name="true_state_string" stdset="0">
+                                     <string>SPINDLE
+PAUSED</string>
+                                    </property>
+                                    <property name="false_state_string" stdset="0">
+                                     <string>PAUSE
+SPINDLE</string>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                                <widget class="QWidget" name="page_11">
+                                 <layout class="QVBoxLayout" name="verticalLayout_62">
+                                  <property name="spacing">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="leftMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="topMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="rightMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <property name="bottomMargin">
+                                   <number>0</number>
+                                  </property>
+                                  <item>
+                                   <widget class="IndicatedPushButton" name="btn_lower_the_spindle">
+                                    <property name="minimumSize">
+                                     <size>
+                                      <width>70</width>
+                                      <height>49</height>
+                                     </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                     <size>
+                                      <width>70</width>
+                                      <height>49</height>
+                                     </size>
+                                    </property>
+                                    <property name="text">
+                                     <string>Lower the
+Spindle</string>
+                                    </property>
+                                    <property name="checkable">
+                                     <bool>false</bool>
+                                    </property>
+                                    <property name="autoExclusive">
+                                     <bool>false</bool>
+                                    </property>
+                                   </widget>
+                                  </item>
+                                 </layout>
+                                </widget>
+                               </widget>
                               </item>
                              </layout>
                             </widget>
@@ -18780,8 +18866,8 @@ here</string>
    <slot>slider_maxv_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>260</x>
-     <y>702</y>
+     <x>246</x>
+     <y>579</y>
     </hint>
     <hint type="destinationlabel">
      <x>190</x>
@@ -18860,8 +18946,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1151</x>
-     <y>372</y>
+     <x>1135</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>1110</x>
@@ -18876,8 +18962,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1150</x>
-     <y>424</y>
+     <x>1125</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -18892,8 +18978,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1266</x>
-     <y>424</y>
+     <x>1135</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -18908,8 +18994,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1379</x>
-     <y>424</y>
+     <x>1125</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -18924,8 +19010,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1151</x>
-     <y>320</y>
+     <x>1135</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -18940,8 +19026,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1266</x>
-     <y>320</y>
+     <x>1135</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -18956,8 +19042,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1381</x>
-     <y>320</y>
+     <x>1135</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -18972,8 +19058,8 @@ here</string>
    <slot>updateJogState()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1381</x>
-     <y>372</y>
+     <x>1135</x>
+     <y>46</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -19020,8 +19106,8 @@ here</string>
    <slot>percentCompleted()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1520</x>
-     <y>65</y>
+     <x>1120</x>
+     <y>26</y>
     </hint>
     <hint type="destinationlabel">
      <x>1246</x>
@@ -19036,8 +19122,8 @@ here</string>
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1520</x>
-     <y>65</y>
+     <x>1120</x>
+     <y>26</y>
     </hint>
     <hint type="destinationlabel">
      <x>354</x>
@@ -19052,8 +19138,8 @@ here</string>
    <slot>cone_size_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>159</x>
-     <y>58</y>
+     <x>124</x>
+     <y>32</y>
     </hint>
     <hint type="destinationlabel">
      <x>275</x>
@@ -19068,8 +19154,8 @@ here</string>
    <slot>grid_size_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>159</x>
-     <y>50</y>
+     <x>124</x>
+     <y>32</y>
     </hint>
     <hint type="destinationlabel">
      <x>294</x>
@@ -19244,8 +19330,8 @@ here</string>
    <slot>btn_m61_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1355</x>
-     <y>427</y>
+     <x>1095</x>
+     <y>41</y>
     </hint>
     <hint type="destinationlabel">
      <x>1324</x>
@@ -19260,8 +19346,8 @@ here</string>
    <slot>btn_touchoff_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1446</x>
-     <y>427</y>
+     <x>1095</x>
+     <y>41</y>
     </hint>
     <hint type="destinationlabel">
      <x>1406</x>
@@ -19276,8 +19362,8 @@ here</string>
    <slot>btn_touchoff_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1416</x>
-     <y>425</y>
+     <x>1095</x>
+     <y>41</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -19292,8 +19378,8 @@ here</string>
    <slot>btn_ref_laser_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1320</x>
-     <y>425</y>
+     <x>1095</x>
+     <y>41</y>
     </hint>
     <hint type="destinationlabel">
      <x>1289</x>
@@ -19308,8 +19394,8 @@ here</string>
    <slot>btn_ref_camera_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1514</x>
-     <y>430</y>
+     <x>1095</x>
+     <y>51</y>
     </hint>
     <hint type="destinationlabel">
      <x>1510</x>
@@ -19324,8 +19410,8 @@ here</string>
    <slot>cam_zoom_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>111</x>
-     <y>141</y>
+     <x>55</x>
+     <y>122</y>
     </hint>
     <hint type="destinationlabel">
      <x>974</x>
@@ -19340,8 +19426,8 @@ here</string>
    <slot>cam_dia_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>111</x>
-     <y>141</y>
+     <x>55</x>
+     <y>122</y>
     </hint>
     <hint type="destinationlabel">
      <x>717</x>
@@ -19356,8 +19442,8 @@ here</string>
    <slot>apply_stylesheet_clicked(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>37</x>
-     <y>58</y>
+     <x>40</x>
+     <y>32</y>
     </hint>
     <hint type="destinationlabel">
      <x>416</x>
@@ -19372,8 +19458,8 @@ here</string>
    <slot>cam_rot_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>66</x>
-     <y>139</y>
+     <x>55</x>
+     <y>122</y>
     </hint>
     <hint type="destinationlabel">
      <x>596</x>
@@ -19404,8 +19490,8 @@ here</string>
    <slot>btn_load_file_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
-     <y>73</y>
+     <x>74</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>953</x>
@@ -19420,8 +19506,8 @@ here</string>
    <slot>btn_gcode_edit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
-     <y>80</y>
+     <x>74</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>1219</x>
@@ -19436,8 +19522,8 @@ here</string>
    <slot>btn_copy_file_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
-     <y>77</y>
+     <x>74</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>952</x>
@@ -19452,8 +19538,8 @@ here</string>
    <slot>btn_copy_file_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
-     <y>76</y>
+     <x>74</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -19516,8 +19602,8 @@ here</string>
    <slot>btn_gripper_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>153</x>
-     <y>78</y>
+     <x>74</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>963</x>
@@ -19708,8 +19794,8 @@ here</string>
    <slot>runFromLineClicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>955</x>
-     <y>66</y>
+     <x>958</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -19724,12 +19810,12 @@ here</string>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>955</x>
-     <y>215</y>
+     <x>958</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
-     <x>956</x>
-     <y>165</y>
+     <x>959</x>
+     <y>32</y>
     </hint>
    </hints>
   </connection>
@@ -19740,8 +19826,8 @@ here</string>
    <slot>btn_start_macro_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>955</x>
-     <y>293</y>
+     <x>958</x>
+     <y>52</y>
     </hint>
     <hint type="destinationlabel">
      <x>799</x>
@@ -19756,8 +19842,8 @@ here</string>
    <slot>use_mdi_keyboard_changed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>171</x>
-     <y>20</y>
+     <x>157</x>
+     <y>21</y>
     </hint>
     <hint type="destinationlabel">
      <x>921</x>
@@ -19772,8 +19858,8 @@ here</string>
    <slot>mdi_enter_pressed()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>133</x>
-     <y>51</y>
+     <x>103</x>
+     <y>50</y>
     </hint>
     <hint type="destinationlabel">
      <x>950</x>
@@ -19788,8 +19874,8 @@ here</string>
    <slot>mdi_select_text()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>26</x>
-     <y>51</y>
+     <x>29</x>
+     <y>50</y>
     </hint>
     <hint type="destinationlabel">
      <x>673</x>
@@ -19804,12 +19890,28 @@ here</string>
    <slot>cmb_tool_icons_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>1250</x>
-     <y>29</y>
+     <x>1125</x>
+     <y>36</y>
     </hint>
     <hint type="destinationlabel">
      <x>1214</x>
      <y>-24</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_lower_the_spindle</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lower_the_spindle_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>258</x>
+     <y>617</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>-98</y>
     </hint>
    </hints>
   </connection>
@@ -19866,11 +19968,12 @@ here</string>
   <slot>mdi_enter_pressed()</slot>
   <slot>mdi_select_text()</slot>
   <slot>cmb_tool_icons_clicked()</slot>
+  <slot>lower_the_spindle_pressed()</slot>
  </slots>
  <buttongroups>
-  <buttongroup name="scale_buttonGroup"/>
   <buttongroup name="axis_buttonGroup"/>
-  <buttongroup name="mode_buttonGroup"/>
   <buttongroup name="page_buttonGroup"/>
+  <buttongroup name="mode_buttonGroup"/>
+  <buttongroup name="scale_buttonGroup"/>
  </buttongroups>
 </ui>

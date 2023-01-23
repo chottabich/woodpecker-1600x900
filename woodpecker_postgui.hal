@@ -37,7 +37,7 @@ net tool-change      hal_manualtoolchange.change   <=  iocontrol.0.tool-change
 net tool-changed     hal_manualtoolchange.changed  <=  iocontrol.0.tool-changed
 net tool-prep-number hal_manualtoolchange.number   <=  iocontrol.0.tool-prep-number
 
-loadusr -Wn my_panel qtvcp -a my_panel.ui
+#loadusr -Wn my_panel qtvcp -a my_panel.ui
 #loadusr -Wn sim_panel qtvcp -a -d sim_panel.ui
 #show pin my_panel.ui
 

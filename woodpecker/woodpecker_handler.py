@@ -956,7 +956,7 @@ class HandlerClass:
             self.add_status("Z level compensation OFF", WARNING)
 
     def btn_stop_clicked(self):
-        if not self.w.btn_pause_spindle.isChecked(): 
+        if not self.w.btn_pause_spindle.isChecked(): return 
             self.w.btn_pause_spindle.setChecked(False)
             self.btn_pause_spindle_clicked(False)            
 

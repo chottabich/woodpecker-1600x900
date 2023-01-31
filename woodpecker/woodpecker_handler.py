@@ -845,7 +845,7 @@ class HandlerClass:
         if index == TAB_MAIN:
             self.w.btn_keyboard.setChecked(False)
             self.w.stackedWidget_2.setCurrentIndex(0)
-            self.w.stackedWidget_4.setCurrentIndex(0)
+            self.w.stackedWidget_4.setCurrentIndex(3)
 
         # toggle home/tool offsets buttons in DRO section
         if index == TAB_TOOL:
@@ -956,10 +956,10 @@ class HandlerClass:
             self.add_status("Z level compensation OFF", WARNING)
 
     def btn_stop_clicked(self):
-        if not self.w.btn_pause_spindle.isChecked(): return 
-            self.w.btn_pause_spindle.setChecked(False)
-            self.btn_pause_spindle_clicked(False)            
-
+        if not self.w.btn_pause_spindle.isChecked(): return
+        self.w.btn_pause_spindle.setChecked(False)
+        self.btn_pause_spindle_clicked(False)
+                                 
     def percentLoaded(self, fraction):
         if fraction <0:
             self.w.progressBar.setValue(0)
